@@ -1,0 +1,112 @@
+/* Write your CSS here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'roboto';
+}
+.main-container {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.account-details {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #150b3e;
+  width: 60%;
+  height: 80%;
+  border-radius: 10px;
+}
+.name-container {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  height: 12%;
+}
+.start-letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: #7c3aed;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 3%;
+  background-color: #c7d2fe;
+}
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+.balance-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 20%;
+}
+.balance {
+  font-size: 20px;
+  font-weight: 500;
+  color: #585070;
+}
+.amount {
+  color: #ffff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.amount span {
+  font-size: 10px;
+  font-weight: 500;
+  color: #585070;
+}
+
+.withdraw-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  height: 55%;
+}
+.withdraw,
+.payment-option {
+  color: #ffff;
+  font-size: 25px;
+  font-weight: 500;
+}
+.payment-option {
+  color: #585070;
+}
+
+.payment-options-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .name,
+  .balance,
+  .amount,
+  .withdraw,
+  .payment-option {
+    font-size: 40px;
+  }
+  .amount span {
+    font-size: 20px;
+  }
+}
